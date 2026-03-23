@@ -1694,3 +1694,23 @@ img::-moz-selection {
 .no-scroll {
   overflow-y: hidden;
 }
+/* ===== 修复代码块显示（像 GitHub 一样） ===== */
+
+pre {
+  padding: 16px !important;
+  margin: 16px 0;
+  overflow: auto;
+  background: #f6f8fa;
+  border-radius: 6px;
+}
+
+pre code {
+  padding: 0 !important;
+  background: none !important;
+}
+
+code {
+  padding: 2px 4px;
+  background: rgba(27,31,35,0.05);
+  border-radius: 4px;
+}
